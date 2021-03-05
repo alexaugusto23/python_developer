@@ -19,4 +19,22 @@ print("Mean is :", x)
 orden = pd.Index(data).sort_values()
 print(orden) 
 
-data_dois = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+data_dois = [[1, 2, 3],
+             [4, 5, 6],
+             [7, 8, 9],
+             [np.nan, np.nan, np.nan]]
+_df = pd.DataFrame(data_dois, columns = ['A', 'B', 'C'])
+print(_df)
+
+_df_new = _df.agg(['sum', 'min'])
+print(_df_new)
+
+_df_new_dois = _df.agg({'A' : ['sum', 'min'], 'B' : ['min', 'max']})
+print(_df_new_dois)
+
+
+#_df_new_tres = _df.agg(x=('A', max), y=('B', 'min'), z=('C', np.mean))
+#print(_df_new_tres)
+
+_df_new_quatro = _df.agg("mean", axis="columns")
+print(_df_new_quatro)
