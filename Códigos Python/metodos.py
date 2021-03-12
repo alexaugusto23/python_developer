@@ -38,3 +38,5 @@ print(_df_new_dois)
 
 _df_new_quatro = _df.agg("mean", axis="columns")
 print(_df_new_quatro)
+
+# test
