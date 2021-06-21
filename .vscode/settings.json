@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\alexsandro.ignacio\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+    "python.pythonPath": "C:\\Users\\alexsandro.ignacio\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.analysis.extraPaths": ["C:\\Users\\alexsandro.ignacio\\OneDrive - WCA Soluções de Inteligência Comercial\\Documentos\\Docs\\wca_py\\Códigos Python"]
 }
+
