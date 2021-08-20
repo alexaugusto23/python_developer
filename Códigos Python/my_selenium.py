@@ -1,7 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from credenciais import usuario, senha
+import scrapy
 import time
 
+chromepatah = "C:/chromedriver/chromedriver.exe"
 
 # Chrome:	https://sites.google.com/a/chromium.org/chromedriver/downloads
 # Edge:	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
@@ -11,18 +14,29 @@ import time
 # https://sites.google.com/a/chromium.org/chromedriver/
 
 
-driver = webdriver.Chrome(executable_path=r'C:/chromedriver/chromedriver.exe')
+driver = webdriver.Chrome(executable_path=chromepatah)
 driver.get("https://e-decision.wca-ec.com.br/login.aspx")
-elem = driver.find_element_by_name("FormLayout$txtLogin")
-elem.send_keys("alexsandro.ignacio@wca-ec.com.br")
-elem = driver.find_element_by_name("FormLayout$txtPassword")
-elem.send_keys("wca2021@")
-elem = driver.find_element_by_xpath("FormLayout$txtPassword")
+
+# # Pela tag
+# elem = driver.find_element_by_name("FormLayout$txtLogin")
+# elem.send_keys(usuario)
+# elem = driver.find_element_by_name("FormLayout$txtPassword")
+# elem.send_keys(senha)
+
+# Pelo path html
+elem = driver.find_element_by_xpath("/html/body/form/div[3]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr/td/input")
+elem.send_keys(usuario)
+elem = driver.find_element_by_xpath("/html/body/form/div[3]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[3]/td/div/table/tbody/tr/td[1]/table/tbody/tr/td/input")
+elem.send_keys(senha)
+
 elem.send_keys(Keys.RETURN)
 
 time.sleep(1)
 driver.close()
 
+
+# # Encontrando elemento pelo CSS + comandos
+# driver.find_element_by_css_selector('button[type=submit]').click()
 # assert "Python" in driver.title
 #elem = driver.find_element_by_name("q").send_keys("pyplan" + Keys.RETURN)
 # assert "No results found." not in driver.page_source
