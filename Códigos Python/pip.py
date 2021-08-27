@@ -5,3 +5,5 @@ pip freeze
 python -m pip freeze > requirements.txt
 python -m pip install -r requirements.txt
 pip freeze --all > requirements.txt
+# List all installed packages and package versions
+!pip freeze
