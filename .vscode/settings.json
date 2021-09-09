@@ -1,5 +1,10 @@
 {
     "python.pythonPath": "C:\\Users\\alexsandro.ignacio\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-    "python.analysis.extraPaths": ["C:\\Users\\alexsandro.ignacio\\OneDrive - WCA Soluções de Inteligência Comercial\\Documentos\\Docs\\wca_py\\Códigos Python"]
+    "python.analysis.extraPaths": [
+        "C:\\Users\\alexsandro.ignacio\\OneDrive - WCA Soluções de Inteligência Comercial\\Documentos\\Docs\\wca_py\\Códigos Python",
+        "C:\\Users\\alexsandro.ignacio\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+        "C:\\Users\\alexsandro.ignacio\\AppData\\Local\\Programs\\Python\\Python39\\Scripts",
+    ],
+    "jupyter.jupyterServerType": "local"
 }
 
