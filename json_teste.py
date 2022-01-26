@@ -1,28 +1,44 @@
 import json 
 
-data = '{"type": "numeric", "field": null, "style": {"color": "#000", "backgroundColor": "#FFF8E3"},"format": "0.00", "header": null , "readOnly": "false", "columnLength": "10"}'
+# Nested list comprehension
+matrix1 = [ f'{i, j}' for i in range(1,145) for j in range(1,7)]
+  
+print(matrix1)
 
-print (json.loads(data))
+# Nested list comprehension tuple 
+matrix2 = [f'{i,j}'for i, j in zip(range(1, 145), range(1, 7))]
 
-data = json.loads(data)
+# Nested list example
+_n = 1
+_cols = ['{' + f'"type":"numeric","field":"Period_{i:03d}","style":' + '{' + '"color":"#000","backgroundColor":"#FFF8E3"'+ '}' + f',"format":"0,0","header":"S{j}","readOnly":false,"columnLength":"5"' + '}' for i in range(1, 145) for j in range(1, 7)]
+print(_cols) 
 
-_n1 = 144
-_n2 = 6
+# example de concatenation dates with weeks.
+#_ind = (pd.date_range('2022',periods=36, freq='M')).astype(str).str[:7]
+_ind = indice_temporal.to_list()
+_ind = [i for i in _ind for _ in range(6)]
 
-new_data = []
+_df = pd.DataFrame({'mes':_ind})
+_df['sem'] = 1
+_df['sem'] = _df.groupby(['mes']).agg({'sem':'cumsum'}).astype(str)
+_df['mes_sem'] = _df['mes']+' S'+_df['sem']
 
-for i in range (1, _n1 + 1):
-    data["field"] = f'Period_{i:03d}'
-    # with open('data.json', 'a', encoding='utf-8') as file: 
-    #     file.write(json.dump(data, file, ensure_ascii=False, indent=4).encode())
-    # file.close()
+result = _df['mes_sem'].to_list()
+
+# Nested columns receive new index.
+_df = pd.DataFrame({'label':indice_temporal.to_list()})
+_df['colspan'] = 6
+
+result = _df.to_dict('record')
+
+
+# with open('data.json', 'a', encoding='utf-8') as file: 
+#     file.write(json.dump(data, file, ensure_ascii=False, indent=4).encode())
+# file.close()
     
-    print(data)
 
-    # for s in range (1,_n2 + 1):
-        
-    #     object_json['header'] = f'Sem_{s:02d}'
-    #     print(object_json)
+
+
 
 """
 
