@@ -1,0 +1,75 @@
+// Input form name: IC - De-Para Produtos Revenue-SalesOP
+// Input form code: ic_form_de_para_prod_rev_sop
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "text",
+        "field": "id_key",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": true,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "cod_unidade",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "cod_produto",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "produto",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "familia",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "produto_sop",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0",
+        "header": "Produtos Sales and Operation Planning"
+    }],
+    "allowAdd": false,
+    "allowRemove": false,
+    "fixedColumns": 3,
+    "relatedNodeId": "form_demanda_produtos_revenue",
+    "refreshOnFocus": true,
+    "relatedNodeField": "id_key",
+    "refreshDataOnChange": true,
+    "metadataModelFunction": "form_fn_labels_datas_depara_prod_rev_sop",
+    "onChangeModelFunction": "fn_lectura_form_depara_prod_rev_sop"
+}

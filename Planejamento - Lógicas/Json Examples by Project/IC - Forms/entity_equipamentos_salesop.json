@@ -1,0 +1,64 @@
+// Input form name: IC - Entity Equipamentos SalesOP
+// Input form code: ic_entity_prod_equipamentos	
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "remoteDropdown",
+        "field": "idx_fabricas",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "ic_entity_fabricas",
+        "header": "<b style='font-size: 1.1em'>Fábricas</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        },
+        "entityLabel": "idx_fabricas"
+    }, {
+        "type": "remoteDropdown",
+        "field": "idx_unidades",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "ic_entity_cod_unidades",
+        "header": "<b style='font-size: 1.1em'>Código Unidades</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        },
+        "entityLabel": "idx_unidades",
+        "relatedField": "idx_fabricas"
+    }, {
+        "type": "text",
+        "field": "idx_equipamentos",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#FFF2CC"
+        },
+        "entity": "ic_entity_prod_equipamentos",
+        "header": "<b style='font-size: 1.1em'>Equipamentos</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        },
+        "entityLabel": "idx_equipamentos",
+        "relatedField": "idx_unidades"
+    }],
+    "allowAdd": true,
+    "allowRemove": true,
+    "fixedColumns": 1,
+    "refreshOnFocus": true
+}

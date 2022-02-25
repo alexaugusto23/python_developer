@@ -1,0 +1,65 @@
+// Input form name: IC - Alocação
+// Input form code: ic_form_alocacao_produtividade
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "text",
+        "field": "id_key",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": true,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "cod_unidade",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "cod_equipamento",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "text",
+        "field": "cod_produto",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "hidden": false,
+        "source": "model"
+    }, {
+        "type": "numeric",
+        "field": "alocacao_produtividade",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.",
+        "header": "Alocação"
+    }],
+    "allowAdd": false,
+    "allowRemove": false,
+    "fixedColumns": 3,
+    "relatedNodeId": "form_ficha_alocacao_produtividade",
+    "refreshOnFocus": true,
+    "relatedNodeField": "id_key",
+    "refreshDataOnChange": true,
+    "metadataModelFunction": "form_fn_labels_datas_alocacao_produtividade",
+    "onChangeModelFunction": "fn_lectura_form_alocacao_produtividade"
+}

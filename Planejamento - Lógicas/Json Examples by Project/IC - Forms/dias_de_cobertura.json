@@ -1,0 +1,320 @@
+// Input form name: IC - Dias de Cobertura
+// Input form code: ic_form_dias_cobertura
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "remoteDropdown",
+        "field": "idx_unidades",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "ic_entity_cod_unidades",
+        "header": "<b style='font-size: 1.1em'>Código Unidades</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        },
+        "entityLabel": "idx_unidades",
+        "relatedField": "idx_fabricas"
+    }, {
+        "type": "remoteDropdown",
+        "field": "idx_tipo_de_equipamento",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "ic_entity_tipo_de_equipamento",
+        "header": "<b style='font-size: 1.1em'>Tipo de Estoque</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        },
+        "entityLabel": "idx_tipo_de_equipamento"
+    }, {
+        "type": "numeric",
+        "field": "Period_001",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 001",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_002",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 002",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_003",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 003",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_004",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 004",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_005",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 005",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_006",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 006",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_007",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 007",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_008",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 008",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_009",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 009",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_010",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 010",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_011",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 011",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_012",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 012",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_013",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 013",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_014",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 014",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_015",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 015",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_016",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 016",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_017",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 017",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_018",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 018",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_019",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 019",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_020",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 020",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_021",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 021",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_022",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 022",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_023",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 023",
+        "readOnly": false,
+        "columnLength": "20"
+    }, {
+        "type": "numeric",
+        "field": "Period_024",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF8E3"
+        },
+        "format": "0.00",
+        "header": "Period 024",
+        "readOnly": false,
+        "columnLength": "20"
+    }],
+    "filters": [{
+        "field": "idx_unidades",
+        "entity": "ic_entity_cod_unidades",
+        "header": "Código Unidade",
+        "filterType": "singleSelect",
+        "includeAll": true,
+        "entityLabel": "idx_unidades"
+    }],
+    "allowAdd": true,
+    "allowRemove": true,
+    "fixedColumns": 1,
+    "refreshOnFocus": true,
+    "refreshDataOnChange": true,
+    "metadataModelFunction": "form_fn_labels_datas_dias_de_cobertura"
+}

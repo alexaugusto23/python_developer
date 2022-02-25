@@ -1,0 +1,43 @@
+// Input form name: IC - Transferências de Unidades
+// Input form code: ic_form_transferencias_de_clinquer
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "text",
+        "field": "idx_unidades_origem",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "idx_datas_transferencia",
+        "header": "<b style='font-size: 1.1em'>Origem</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        }
+    }, {
+        "type": "text",
+        "field": "idx_unidades_destino",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "entity": "idx_datas_transferencia",
+        "header": "<b style='font-size: 1.1em'>Destino</b>",
+        "hidden": false,
+        "readOnly": false,
+        "validators": {
+            "unique": false,
+            "required": true
+        }
+    }],
+    "allowAdd": true,
+    "allowRemove": true,
+    "fixedColumns": 1,
+    "refreshOnFocus": true
+}

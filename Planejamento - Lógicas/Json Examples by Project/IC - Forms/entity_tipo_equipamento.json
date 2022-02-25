@@ -1,0 +1,18 @@
+// Input form name: IC - Entity Tipo de Equipamento
+// Input form code: ic_entity_tipo_de_equipamento
+// Input form file path: Forms/Oferta Disponivel.db
+
+{
+    "columns": [{
+        "type": "text",
+        "field": "idx_tipo_de_equipamento",
+        "header": "Tipo",
+        "readOnly": false,
+        "columnLength": "150"
+    }],
+    "filters": [],
+    "allowAdd": true,
+    "allowRemove": true,
+    "fixedColumns": 1,
+    "refreshOnFocus": true
+}
