@@ -5,7 +5,7 @@
 let func = function(hotInstance, TD, row, col, prop, value, cellProperties)
 { 
     const dataRow = hotInstance.getSourceDataAtRow(row); 
-    if (dataRow.id_key >= 0)
+    if (dataRow.id_key == 0)
         {TD.style.color = '#000';
         TD.style.background = '#F3F3F3';
         cellProperties.readOnly = false;
