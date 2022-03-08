@@ -12,6 +12,18 @@ let func = function(hotInstance, TD, row, col, prop, value, cellProperties)
     }
 }
 
+// Funcionou
+let funcA = function(hotInstance, TD, row, col, prop, value, cellProperties)
+{ 
+    const dataRow = hotInstance.getSourceDataAtRow(row); 
+    if (dataRow.id_key == 'tot_key') { 
+        TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; 
+    } 
+}
+
+
+
+
 
 function funcB(hotInstance, TD, row, col, prop, value, cellProperties) 
 {   const dataRow = hotInstance.getSourceDataAtRow(row); 
@@ -41,5 +53,7 @@ function funcB(hotInstance, TD, row, col, prop, value, cellProperties)
         TD.style.background = '#FFF8E3'; 
     } 
 }
+
+
 
 
