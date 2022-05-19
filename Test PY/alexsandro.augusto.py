@@ -1,7 +1,6 @@
 # #### Shooju Test ####
-print(f"Shooju Test: Alexsandro Augusto Ignácio\n")
+print(f"\nShooju Test: Alexsandro Augusto Ignácio\n")
 
-# ISO format as defined standard: YYYY-MM-DD
 # Imports of Libraries
 
 import pandas as pd
@@ -17,7 +16,7 @@ PATH = 'C://Users//alexsandro.ignacio//Downloads' # Where is alexsandro.ignacio 
 TARGET = 'jodi_gas_csv_beta.zip'
 NAME_FILE = 'jodi_gas_beta.csv'
 NAME_FILE_JSON = 'jodi_gas_beta.json'
-ENCOD = 'ISO-8859-1'
+ENCOD = 'latin-1'
 PATH_FILE = os.path.join(PATH, TARGET)
 PATH_FILE_JSON = os.path.join(PATH, NAME_FILE_JSON)
 MARK = 60
@@ -33,16 +32,16 @@ def verify_dirictory(PATH, TARGET):
                 path_file = os.path.join(dirpath, file)
                 try:
                     os.remove(path_file)
-                    print(f'\n- File Removed -\n')
+                    print(f'- File Removed -\n')
                     
                 except OSError as e:
-                    print(f"\nError:{ e.strerror}\n")
+                    print(f"Error:{ e.strerror}\n")
             #  print(file)    
 
 # Program
 verify_dirictory(PATH, TARGET)        
 
-print(f"## Starting Count Time Download ##")
+print(f"## Starting Count Time Download ##\n")
 start = time.time()
 
 # Request URL
@@ -69,7 +68,7 @@ with ZipFile(PATH_FILE) as file_zip:
 print(f"\n")
 print(f"#" * MARK)
 print(f"\nShape: {_df.shape}\n")
-print(f"\n_df}\n")
+print(f"\n{_df}\n")
 print(f"#" * MARK)
 print(f"\n")
 
@@ -77,7 +76,7 @@ dict_country = {'AD':'Andorra','AE':'Emirados Árabes Unidos','AF':'Afeganistão
 
 _obj  = []
 
-print(f"## Starting Count Time creating json ##")
+print(f"\n## Starting Count Time creating json ##\n")
 start = time.time()
 for index, row in _df.iterrows():
     # print(index, row["TIME_PERIOD"],row["OBS_VALUE"])
@@ -102,10 +101,10 @@ print(f"\n")
 
 verify_dirictory(PATH, NAME_FILE_JSON)
 
-with open (PATH_FILE_JSON, 'w', encoding="utf-8") as file:
-    json.dump(_obj, file, indent=2)
+with open (PATH_FILE_JSON, 'w', encoding=ENCOD) as file:
+    json.dump(_obj, file, indent=2, ensure_ascii=False)
 
-print(f'\n- File Created -\n')
+print(f'- File Created -\n')
 
 end = time.time()
-print(f"\n## Time for creating json: {round((end - start), 2)} ##\n")
+print(f"## Time for creating json: {round((end - start), 2)} ##\n")
