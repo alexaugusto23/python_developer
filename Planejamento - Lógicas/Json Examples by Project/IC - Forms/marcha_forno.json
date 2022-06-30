@@ -3,52 +3,57 @@
 // Input form file path: Forms/Oferta Disponivel.db
 
 {
-    "columns": [{
+    "columns": [
+      {
         "type": "text",
         "field": "idx_maquina_tipo",
         "style": {
-            "color": "#000000",
-            "font-size": "1em",
-            "backgroundColor": "#E8E8E8"
+          "color": "#000000",
+          "font-size": "1em",
+          "backgroundColor": "#E8E8E8"
         },
         "hidden": true,
         "source": "model"
-    }, {
+      },
+      {
         "type": "text",
         "field": "cod_unidades",
         "style": {
-            "color": "#000000",
-            "font-size": "1em",
-            "backgroundColor": "#E8E8E8"
+          "color": "#000000",
+          "font-size": "1em",
+          "backgroundColor": "#E8E8E8"
         },
         "hidden": false,
         "source": "model"
-    }, {
+      },
+      {
         "type": "text",
         "field": "equipamentos",
         "style": {
-            "color": "#000000",
-            "font-size": "1em",
-            "backgroundColor": "#E8E8E8"
+          "color": "#000000",
+          "font-size": "1em",
+          "backgroundColor": "#E8E8E8"
         },
         "hidden": false,
         "source": "model"
-    }, {
+      },
+      {
         "type": "text",
         "field": "relatorio",
         "style": {
-            "color": "#000000",
-            "font-size": "1em",
-            "backgroundColor": "#E8E8E8"
+          "color": "#000000",
+          "font-size": "1em",
+          "backgroundColor": "#E8E8E8"
         },
         "hidden": false,
         "source": "model"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_001",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -56,12 +61,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_002",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -69,12 +75,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_003",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -82,12 +89,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_004",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -95,12 +103,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_005",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -108,12 +117,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_006",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -121,12 +131,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_007",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -134,12 +145,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_008",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -147,12 +159,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_009",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -160,12 +173,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_010",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -173,12 +187,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_011",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -186,12 +201,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_012",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -199,12 +215,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_013",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -212,12 +229,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_014",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -225,12 +243,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_015",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -238,12 +257,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_016",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -251,12 +271,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_017",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -264,12 +285,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_018",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -277,12 +299,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_019",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -290,12 +313,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_020",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -303,12 +327,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_021",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -316,12 +341,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_022",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -329,12 +355,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_023",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -342,12 +369,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_024",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -355,12 +383,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_025",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -368,12 +397,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_026",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -381,12 +411,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_027",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -394,12 +425,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_028",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -407,12 +439,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_029",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -420,12 +453,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_030",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -433,12 +467,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_031",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -446,12 +481,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_032",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -459,12 +495,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_033",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -472,12 +509,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_034",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -485,12 +523,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_035",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -498,12 +537,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_036",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -511,12 +551,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_037",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -524,12 +565,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_038",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -537,12 +579,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_039",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -550,12 +593,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_040",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -563,12 +607,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_041",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -576,12 +621,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_042",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -589,12 +635,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_043",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -602,12 +649,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_044",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -615,12 +663,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_045",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -628,12 +677,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_046",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -641,12 +691,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_047",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -654,12 +705,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_048",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -667,12 +719,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_049",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -680,12 +733,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_050",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -693,12 +747,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_051",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -706,12 +761,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_052",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -719,12 +775,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_053",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -732,12 +789,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_054",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -745,12 +803,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_055",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -758,12 +817,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_056",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -771,12 +831,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_057",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -784,12 +845,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_058",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -797,12 +859,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_059",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -810,12 +873,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_060",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -823,12 +887,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_061",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -836,12 +901,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_062",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -849,12 +915,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_063",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -862,12 +929,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_064",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -875,12 +943,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_065",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -888,12 +957,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_066",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -901,12 +971,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_067",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -914,12 +985,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_068",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -927,12 +999,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_069",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -940,12 +1013,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_070",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -953,12 +1027,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_071",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -966,12 +1041,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_072",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -979,12 +1055,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_073",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -992,12 +1069,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_074",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1005,12 +1083,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_075",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1018,12 +1097,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_076",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1031,12 +1111,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_077",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1044,12 +1125,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_078",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1057,12 +1139,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_079",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1070,12 +1153,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_080",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1083,12 +1167,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_081",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1096,12 +1181,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_082",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1109,12 +1195,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_083",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1122,12 +1209,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_084",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1135,12 +1223,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_085",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1148,12 +1237,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_086",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1161,12 +1251,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_087",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1174,12 +1265,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_088",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1187,12 +1279,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_089",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1200,12 +1293,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_090",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1213,12 +1307,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_091",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1226,12 +1321,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_092",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1239,12 +1335,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_093",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1252,12 +1349,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_094",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1265,12 +1363,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_095",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1278,12 +1377,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_096",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1291,12 +1391,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_097",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1304,12 +1405,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_098",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1317,12 +1419,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_099",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1330,12 +1433,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_100",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1343,12 +1447,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_101",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1356,12 +1461,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_102",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1369,12 +1475,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_103",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1382,12 +1489,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_104",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1395,12 +1503,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_105",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1408,12 +1517,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_106",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1421,12 +1531,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_107",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1434,12 +1545,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_108",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1447,12 +1559,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_109",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1460,12 +1573,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_110",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1473,12 +1587,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_111",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1486,12 +1601,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_112",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1499,12 +1615,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_113",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1512,12 +1629,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_114",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1525,12 +1643,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_115",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1538,12 +1657,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_116",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1551,12 +1671,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_117",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1564,12 +1685,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_118",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1577,12 +1699,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_119",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1590,12 +1713,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_120",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1603,12 +1727,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_121",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1616,12 +1741,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_122",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1629,12 +1755,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_123",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1642,12 +1769,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_124",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1655,12 +1783,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_125",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1668,12 +1797,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_126",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1681,12 +1811,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_127",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1694,12 +1825,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_128",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1707,12 +1839,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_129",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1720,12 +1853,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_130",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1733,12 +1867,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_131",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1746,12 +1881,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_132",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1759,12 +1895,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_133",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1772,12 +1909,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_134",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1785,12 +1923,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_135",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1798,12 +1937,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_136",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1811,12 +1951,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_137",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1824,12 +1965,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_138",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1837,12 +1979,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_139",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S1",
@@ -1850,12 +1993,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_140",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S2",
@@ -1863,12 +2007,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_141",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S3",
@@ -1876,12 +2021,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_142",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S4",
@@ -1889,12 +2035,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_143",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S5",
@@ -1902,12 +2049,13 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "Period_144",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#FFF8E3"
         },
         "format": "0",
         "header": "S6",
@@ -1915,33 +2063,36 @@
         "readOnly": false,
         "columnLength": 5,
         "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } }"
-    }, {
+      },
+      {
         "type": "numeric",
         "field": "total_dias",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#F3F3f3"
         },
         "format": "0",
         "header": "Total Dias",
         "source": "model",
         "readOnly": false,
         "columnLength": 5,
-        "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } if (rel == 'Horarios de Ponta') { TD.style.background = '#F3F3F3'; } if (rel == 'Manutenção Semanal') { TD.style.background = '#F3F3F3'; } if (rel == 'Grandes Paradas') { TD.style.background = '#FFF8E3'; } if (rel == 'Dias Uteis') { TD.style.background = '#FFF8E3C'; } if (rel == 'Horas Manuntenção') { TD.style.background = '#FFF8E3'; } if (rel == 'Outros') { TD.style.background = '#FFF8E3'; } }"
-    }, {
+        "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } if (rel == 'Horarios de Ponta') { TD.style.background = '#F3F3F3'; } if (rel == 'Manutenção Semanal') { TD.style.background = '#F3F3F3'; } if (rel == 'Grandes Paradas') { TD.style.background = '#F3F3F3'; } if (rel == 'Dias Uteis') { TD.style.background = '#F3F3F3'; } if (rel == 'Horas Manuntenção') { TD.style.background = '#F3F3F3'; } if (rel == 'Outros') { TD.style.background = '#F3F3F3'; } }"
+      },
+      {
         "type": "numeric",
         "field": "total_horas",
         "style": {
-            "color": "#000",
-            "backgroundColor": "#FFF8E3"
+          "color": "#000",
+          "backgroundColor": "#F3F3f3"
         },
         "format": "0",
         "header": "Total Horas",
         "source": "model",
         "readOnly": false,
         "columnLength": 5,
-        "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } if (rel == 'Horarios de Ponta') { TD.style.background = '#F3F3F3'; } if (rel == 'Manutenção Semanal') { TD.style.background = '#F3F3F3'; } if (rel == 'Grandes Paradas') { TD.style.background = '#FFF8E3'; } if (rel == 'Dias Uteis') { TD.style.background = '#FFF8E3C'; } if (rel == 'Horas Manuntenção') { TD.style.background = '#FFF8E3'; } if (rel == 'Outros') { TD.style.background = '#FFF8E3'; } }"
-    }],
+        "customCellFunction": "function(hotInstance, TD, row, col, prop, value, cellProperties) { const dataRow = hotInstance.getSourceDataAtRow(row); const rel = dataRow.relatorio; if (dataRow.id >= 0) { cellProperties.readOnly = false; } if (rel == 'Marchas') { TD.style.background = '#F3F3F3'; TD.style.fontWeight = 'bold'; } if (rel == 'Horarios de Ponta') { TD.style.background = '#F3F3F3'; } if (rel == 'Manutenção Semanal') { TD.style.background = '#F3F3F3'; } if (rel == 'Grandes Paradas') { TD.style.background = '#F3F3F3'; } if (rel == 'Dias Uteis') { TD.style.background = '#F3F3F3'; } if (rel == 'Horas Manuntenção') { TD.style.background = '#F3F3F3'; } if (rel == 'Outros') { TD.style.background = '#F3F3F3'; } }"
+      }
+    ],
     "allowAdd": false,
     "allowRemove": false,
     "fixedColumns": 3,
@@ -1950,5 +2101,9 @@
     "relatedNodeField": "idx_maquina_tipo",
     "refreshDataOnChange": true,
     "metadataModelFunction": "form_fn_labels_datas_marcha_fornos",
-    "onChangeModelFunction": "fn_lectura_form_intercemnt"
-}
+    "onChangeModelFunction": "fn_lectura_form_intercemnt",
+        "colWidths": [100, 115, 175, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 
+  80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 
+  80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80, 80],
+        "columnResize":true
+  }
