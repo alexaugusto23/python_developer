@@ -1,0 +1,79 @@
+Iniciar projeto: django-admin startproject <nome_do_projeto>
+
+manage.py: script para gerenciar a aplicação Django.
+init.py: arquivo vazio que indica um package.
+settings.py: arquivo de configuração do projeto.
+urls.py: todas as urls do projeto são definidas aqui.
+wsgi.py: protocolo que serve http.
+
+Estrutura:
+mysite/
+    manage.py
+    db.sqlite3
+    __pycache__/
+        __init__.cpython-39.pyc
+        __settings__.cpython-39.pyc
+        __urls__.cpython-39.pyc
+        __wsgi__.cpython-39.pyc
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+
+Iniciando um app:
+python manage.py startapp nome_do_app
+python manage.py startapp aprendendodjango
+
+Estrutura:
+myapp/
+    migrations/ 
+        __init__.py
+   __init__.py
+   admin.py
+   apps.py
+   models.py
+   tests.py
+   views.py 
+
+Criando Banco de Dados:
+criar banco de dados: python manage.py migrate
+
+Criando um usuário administrador:
+python manage.py createsuperuser
+
+Executar o Servidor: python manage.py runserver
+python manage.py runserver 0.0.0.0:8000 
+python manage.py runserver xxx.xxx.xxx.xx:8000
+
+Verificar se o app executa no endereços:
+http://localhost:8000/
+http://127.0.0.1:8000/
+
+Torne o pool app modificável no administrador:
+
+from django.contrib import admin
+from polls.models import Question, Choice
+admin.site.register(Question) admin.site.register(Choice)
+
+Vamos escrever a primeira visualização. Abra o arquivo polls / views.py:
+
+from django.http import HttpResponse
+
+def index(request): 
+    return HttpResponse("Hello, world. You're at the polls index.")
+
+Para chamar a visualização, precisamos mapeá-la para uma URL - e, 
+para isso, precisamos de um URLconf. Crie um arquivo chamado urls.py 
+no diretório de pesquisas. No arquivo nome_do_app/ urls.py, 
+inclua o seguinte código:
+
+from django.conf.urls import patterns, url
+from polls import views
+
+urlpatterns = patterns('', url(r'^$', views.index, name='index'), )
+
+r’^$’: expressão regular que representa um caminho acessado via navegador, quando solicitado.
+views: representa a view que deve ser executada (aquela que foi importada lá em cima, no caso a de perfil).
+index: chama a função que queremos executar.
+
