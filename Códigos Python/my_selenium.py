@@ -15,7 +15,7 @@ chromepatah = "C:/chromedriver/chromedriver.exe"
 
 
 driver = webdriver.Chrome(executable_path=chromepatah)
-driver.get("https://e-decision.wca-ec.com.br/login.aspx")
+driver.get("https://www.anbima.com.br/pt_br/informar/precos-e-indices/precos/taxas-de-cri-e-cra/taxas-de-cri-e-cra.htm")
 
 # # Pela tag
 # elem = driver.find_element_by_name("FormLayout$txtLogin")
@@ -24,10 +24,8 @@ driver.get("https://e-decision.wca-ec.com.br/login.aspx")
 # elem.send_keys(senha)
 
 # Pelo path html
-elem = driver.find_element_by_xpath("/html/body/form/div[3]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td[1]/table/tbody/tr/td/input")
+elem = driver.find_element_by_xpath("/html/body/div[5]/div/main/div[2]/div/form/input[14]")
 elem.send_keys(usuario)
-elem = driver.find_element_by_xpath("/html/body/form/div[3]/table/tbody/tr[1]/td[2]/div/table/tbody/tr[3]/td/div/table/tbody/tr/td[1]/table/tbody/tr/td/input")
-elem.send_keys(senha)
 
 elem.send_keys(Keys.RETURN)
 
