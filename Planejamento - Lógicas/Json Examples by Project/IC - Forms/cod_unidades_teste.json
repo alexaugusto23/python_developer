@@ -1,0 +1,46 @@
+{
+  "columns": [
+    {
+      "type": "numeric",
+      "field": "id_key",
+      "style": {
+        "color": "#000000",
+        "font-size": "1em",
+        "backgroundColor": "#E8E8E8"
+      },
+      "hidden": true,
+      "source": "model"
+    },
+    {
+      "type": "text",
+      "field": "idx_fab",
+      "style": {
+        "color": "#000000",
+        "font-size": "1em",
+        "backgroundColor": "#E8E8E8"
+      },
+      "hidden": false,
+      "header": "<b style='font-size: 1.1em'>Fábricas</b>",
+      "source": "model"
+    },
+    {
+      "type": "text",
+      "field": "idx_unidades",
+      "style": {
+        "color": "#000",
+        "backgroundColor": "#FFF2CC"
+      },
+      "entity": "ic_entity_cod_unidades",
+      "header": "<b style='font-size: 1.1em'>Código Unidades</b>",
+      "hidden": false
+    }
+  ],
+  "allowAdd": false,
+  "allowRemove": false,
+  "columnResize": true,
+  "fixedColumns": 1,
+  "relatedNodeId": "form_cod_fabricas",
+  "refreshOnFocus": true,
+  "relatedNodeField": "id_key",
+  "refreshDataOnChange": true
+}
