@@ -1,0 +1,29 @@
+{
+    "columns": [{
+        "type": "text",
+        "field": "idx_fabricas",
+        "style": {
+            "color": "#000000",
+            "font-size": "1em",
+            "backgroundColor": "#E8E8E8"
+        },
+        "header": "<b style='font-size: 1.1em'>Fábricas</b>"
+    }, {
+        "type": "text",
+        "field": "idx_unidades",
+        "style": {
+            "color": "#000",
+            "backgroundColor": "#FFF2CC"
+        },
+        "entity": "ic_entity_cod_unidades",
+        "header": "<b style='font-size: 1.1em'>Código Unidades</b>",
+        "hidden": false,
+        "readOnly": false,
+        "entityLabel": "idx_unidades",
+        "relatedField": "idx_fabricas"
+    }],
+    "allowAdd": true,
+    "allowRemove": false,
+    "fixedColumns": 1,
+    "refreshOnFocus": true
+}
